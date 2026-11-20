@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="fi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#16834a">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Sokerimuistuttaja">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+  <title>Sokerimuistuttaja</title>
+</head>
+<body>
+  <main class="app">
+    <header class="top">
+      <div class="logo" aria-hidden="true">♥</div>
+      <div><h1>Sokerimuistuttaja</h1><p>Oma muistutussovellus</p></div>
+    </header>
+
+    <section class="welcome">
+      <p class="eyebrow">MUISTUTUS</p>
+      <h2>Muista tarkistaa sokerit 💚</h2>
+      <p>Avaa FreeStyle Libre 3 -sovellus ja tarkista viimeisin lukemasi.</p>
+      <button id="libreBtn" class="button secondary">Avaa Libre 3</button>
+    </section>
+
+    <section class="panel">
+      <div class="section-title"><h2>Päivän muistutukset</h2><span id="status" class="status">Valmis</span></div>
+      <div id="times" class="times"></div>
+      <p class="hint">Muokkaa kellonaikoja ja tallenna muutokset.</p>
+      <button id="saveBtn" class="button">Tallenna muistutusajat</button>
+    </section>
+
+    <section class="panel">
+      <h2>Tämän päivän kuittaus</h2>
+      <p class="hint">Kuittaa muistutus, kun olet tarkistanut Libre 3 -sovelluksen.</p>
+      <div id="checks" class="checks"></div>
+      <button id="resetBtn" class="button secondary">Nollaa tämän päivän kuittaukset</button>
+    </section>
+
+    <section class="panel">
+      <h2>Ilmoitukset</h2>
+      <p id="permissionText" class="hint">Salli ilmoitukset, jotta sovellus voi näyttää ilmoituksia silloin, kun se on auki.</p>
+      <button id="notifyBtn" class="button secondary">Ota ilmoitukset käyttöön</button>
+      <p class="small">Huom: tämä ensimmäinen versio ei pysty ajastamaan luotettavia ilmoituksia sovelluksen ollessa suljettuna. Katso ohjeet mukana tulevasta README-tiedostosta.</p>
+    </section>
+
+    <footer>Muistuttaja ei mittaa verensokeria eikä korvaa Libre 3:n omia hälytyksiä.</footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

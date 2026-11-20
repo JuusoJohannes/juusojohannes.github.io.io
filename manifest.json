@@ -1,0 +1,15 @@
+{
+  "id": "./",
+  "name": "Sokerimuistuttaja",
+  "short_name": "Sokerimuistuttaja",
+  "description": "Oma muistutus Libre 3 -sovelluksen tarkistamiseen.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f4faf6",
+  "theme_color": "#16834a",
+  "icons": [
+    {"src":"icons/icon-192.png","sizes":"192x192","type":"image/png"},
+    {"src":"icons/icon-512.png","sizes":"512x512","type":"image/png"}
+  ]
+}
